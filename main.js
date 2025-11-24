@@ -1,5 +1,3 @@
-// 🔥 MAIN.JS — MOSTRAR JSON + NUEVOS, PERO SOLO EDITAR/ELIMINAR LOS NUEVOS
-
 let productos = [];
 let productosJSON = [];
 
@@ -11,7 +9,7 @@ fetch("./productos.json")
     .then(response => response.json())
     .then(data => {
 
-        productosJSON = data; // ESTO NO SE MODIFICA NUNCA
+        productosJSON = data;
 
         // Cargar productos creados por usuario
         const productosNuevos = JSON.parse(localStorage.getItem("productos-nuevos")) || [];
