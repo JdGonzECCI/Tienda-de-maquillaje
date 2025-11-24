@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Se define compatibilidad con Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Se configura el viewport para permitir diseño responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crear Fórmula Dermatólogo</title>
+
+    <!-- Se cargan iconos de Bootstrap para elementos gráficos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- Se agrega la librería Toastify para notificaciones -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!-- Se enlaza el archivo de estilos principal -->
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- Encabezado para la vista móvil -->
+        <header class="header-mobile">
+            <h1 class="logo">Shop CosmoSkin Clinic</h1>
+
+            <!-- Botón que abre el menú lateral en dispositivos móviles -->
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+
+        <!-- Menú lateral -->
+        <aside>
+
+            <!-- Botón que cierra el menú lateral -->
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+
+            <header>
+                <h1 class="logo">Shop CosmoSkin Clinic</h1>
+            </header>
+
+            <!-- Opciones del menú lateral -->
+            <nav>
+                <ul class="menu">
+
+                    <li>
+                        <!-- Opción para regresar a la tienda -->
+                        <a class="boton-menu" href="index.html">
+                            <i class="bi bi-arrow-left-circle"></i> Volver a la tienda
+                        </a>
+                    </li>
+
+                    <li>
+                        <!-- Opción para abrir la página de fórmulas guardadas -->
+                        <a class="boton-menu" href="llamarFormula.html">
+                            <i class="bi bi-search-heart"></i> Llamar Fórmula
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <!-- Pie de página del menú -->
+            <footer>
+                <p class="texto-footer">© 2025 Shop CosmoSkin Clinic</p>
+            </footer>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main>
+
+            <h2 class="titulo-principal">Crear Fórmula Dermatólogo</h2>
+
+            <!-- Sección de filtros para clasificar los productos -->
+            <div class="filtros-formula">
+                <button class="filtro-btn active" data-categoria="todos">Todos</button>
+                <button class="filtro-btn" data-categoria="higiene">Higiene</button>
+                <button class="filtro-btn" data-categoria="maquillaje">Maquillaje</button>
+                <button class="filtro-btn" data-categoria="cuidadoPiel">Cuidado de la piel</button>
+                <button class="filtro-btn" data-categoria="perfumeria">Perfumería</button>
+                <button class="filtro-btn" data-categoria="cuidadoCabello">Cabello</button>
+            </div>
+
+            <!-- Contenedor donde se cargarán dinámicamente los productos del catálogo -->
+            <div id="contenedorProductosFormula" class="contenedor-productos"></div>
+
+            <!-- Sección para comentarios adicionales del dermatólogo -->
+            <div class="comentarios-box">
+                <h3><i class="bi bi-chat-square-text"></i> Comentarios del dermatólogo</h3>
+
+                <!-- Área de texto donde se agregan anotaciones de uso -->
+                <textarea id="comentariosFormula" rows="4"
+                    placeholder="Anotaciones, recomendaciones, frecuencia, zonas de aplicación..."></textarea>
+            </div>
+
+            <!-- Botón para guardar la fórmula creada -->
+            <button class="boton-carrito" onclick="guardarFormula()">
+                <i class="bi bi-save"></i> Guardar fórmula
+            </button>
+
+            <!-- Contenedor donde se mostrará el código generado de la fórmula -->
+            <div id="codigoGenerado" style="margin-top:20px; font-size:18px; font-weight:bold;"></div>
+
+        </main>
+
+    </div>
+
+    <!-- Scripts principales del proyecto -->
+    <script src="./menu.js"></script>
+    <script src="./formulaDermatologo.js"></script>
+
+</body>
+
+</html>

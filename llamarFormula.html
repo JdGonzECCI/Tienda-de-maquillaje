@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Configuración básica del documento HTML -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título mostrado en la pestaña del navegador -->
+    <title>Llamar Fórmula</title>
+
+    <!-- Iconos de Bootstrap utilizados en botones y elementos gráficos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- Estilos de la librería Toastify usada para notificaciones -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!-- Hoja de estilos principal del sistema -->
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Contenedor principal que organiza toda la estructura visual -->
+
+        <!-- Encabezado visible en dispositivos móviles -->
+        <header class="header-mobile">
+            <h1 class="logo">Shop CosmoSkin Clinic</h1>
+
+            <!-- Botón que despliega el menú lateral en pantallas pequeñas -->
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+
+        <!-- Menú lateral del sitio -->
+        <aside>
+
+            <!-- Botón para cerrar el menú (modo móvil) -->
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+
+            <!-- Encabezado dentro del menú lateral -->
+            <header>
+                <h1 class="logo">Shop CosmoSkin Clinic</h1>
+            </header>
+
+            <!-- Navegación principal -->
+            <nav>
+                <ul class="menu">
+                    <!-- Enlace que permite volver a la tienda -->
+                    <li>
+                        <a class="boton-menu" href="index.html">
+                            <i class="bi bi-arrow-left-circle"></i> Volver a la tienda
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Pie del menú lateral -->
+            <footer>
+                <p class="texto-footer">© 2025 Shop CosmoSkin Clinic</p>
+            </footer>
+
+        </aside>
+
+        <!-- Contenido principal de la página -->
+        <main>
+
+            <!-- Título principal de la vista -->
+            <h2 class="titulo-principal">Consultar Fórmula Dermatólogo</h2>
+
+            <!-- Contenedor donde el usuario ingresa el código de consulta -->
+            <div class="contenedor-productos" style="max-width:450px; margin:auto;">
+                <h3><i class="bi bi-search-heart"></i> Buscar por código</h3>
+
+                <!-- Entrada numérica donde el usuario escribe el código de 10 dígitos -->
+                <input type="number" id="codigoConsulta" class="input-form" placeholder="Código de 10 dígitos">
+
+                <!-- Botón que ejecuta la búsqueda de la fórmula -->
+                <button class="boton-carrito" onclick="buscarFormula()">
+                    <i class="bi bi-search"></i> Buscar fórmula
+                </button>
+            </div>
+
+            <!-- Contenedor donde se mostrará el resultado de la búsqueda -->
+            <div id="resultado" class="contenedor-productos" style="margin-top:25px;"></div>
+
+        </main>
+
+    </div>
+
+    <!-- Script encargado del menú responsivo -->
+    <script src="./menu.js"></script>
+
+    <!-- Script que contiene la lógica de búsqueda de fórmulas -->
+    <script src="./llamarFormula.js"></script>
+
+</body>
+
+</html>

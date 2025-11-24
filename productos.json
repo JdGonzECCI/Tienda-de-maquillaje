@@ -1,0 +1,152 @@
+[
+    {
+        "id": "Higiene-01",
+        "titulo": "Bioderma Atoderm Gel de Ducha",
+        "imagen": "./Imagenes/Higiene/Higiene 1.png",
+        "categoria": {
+            "nombre": "Higiene",
+            "id": "higiene"
+        },
+        "precio": 25000
+    },
+    {
+        "id": "Higiene-02",
+        "titulo": "Eucerin pH5 Syndet Gel",
+        "imagen": "./Imagenes/Higiene/Higiene 2.png",
+        "categoria": {
+            "nombre": "Higiene",
+            "id": "higiene"
+        },
+        "precio": 18000
+    },
+    {
+        "id": "Higiene-03",
+        "titulo": "ISDIN Germisdin Intim Calm Gel",
+        "imagen": "./Imagenes/Higiene/Higiene 3.png",
+        "categoria": {
+            "nombre": "Higiene",
+            "id": "higiene"
+        },
+        "precio": 22000
+    },
+    {
+        "id": "Maquillaje-01",
+        "titulo": "La Roche Posay Toleriane Teint",
+        "imagen": "./Imagenes/Maquillaje/Maquillaje 1.png",
+        "categoria": {
+            "nombre": "Maquillaje",
+            "id": "maquillaje"
+        },
+        "precio": 48000
+    },
+    {
+        "id": "Maquillaje-02",
+        "titulo": "Clinique Even Better Clinical Serum Foundation SPF 20",
+        "imagen": "./Imagenes/Maquillaje/Maquillaje 2.png",
+        "categoria": {
+            "nombre": "Maquillaje",
+            "id": "maquillaje"
+        },
+        "precio": 62000
+    },
+    {
+        "id": "Maquillaje-03",
+        "titulo": "Clinique Anti Blemish Liquid Foundation",
+        "imagen": "./Imagenes/Maquillaje/Maquillaje 3.png",
+        "categoria": {
+            "nombre": "Maquillaje",
+            "id": "maquillaje"
+        },
+        "precio": 56000
+    },
+    {
+        "id": "CuidadoPiel-01",
+        "titulo": "Neutrogena Hydro Boost Gel Crema",
+        "imagen": "./Imagenes/Cuidado Piel/Cuidado Piel 1.png",
+        "categoria": {
+            "nombre": "Cuidado de la piel",
+            "id": "cuidadoPiel"
+        },
+        "precio": 35000
+    },
+    {
+        "id": "CuidadoPiel-02",
+        "titulo": "La Roche Posay Effaclar Gel Limpiador",
+        "imagen": "./Imagenes/Cuidado Piel/Cuidado Piel 2.png",
+        "categoria": {
+            "nombre": "Cuidado de la piel",
+            "id": "cuidadoPiel"
+        },
+        "precio": 40000
+    },
+    {
+        "id": "CuidadoPiel-03",
+        "titulo": "La Roche Posay Anthelios Oil Control UVMune 400",
+        "imagen": "./Imagenes/Cuidado Piel/Cuidado Piel 3.png",
+        "categoria": {
+            "nombre": "Cuidado de la piel",
+            "id": "cuidadoPiel"
+        },
+        "precio": 52000
+    },
+    {
+        "id": "Perfumeria-01",
+        "titulo": "Naseem Almizcle Taharah",
+        "imagen": "./Imagenes/Perfumeria/Perfumeria 1.png",
+        "categoria": {
+            "nombre": "Perfumeria",
+            "id": "perfumeria"
+        },
+        "precio": 45000
+    },
+    {
+        "id": "Perfumeria-02",
+        "titulo": "Aceite de Perfume Zoha Rose Bloom",
+        "imagen": "./Imagenes/Perfumeria/Perfumeria 2.png",
+        "categoria": {
+            "nombre": "Perfumeria",
+            "id": "perfumeria"
+        },
+        "precio": 38000
+    },
+    {
+        "id": "Perfumeria-03",
+        "titulo": "Skylar Vanilla Sky Eau de Parfum",
+        "imagen": "./Imagenes/Perfumeria/Perfumeria 3.png",
+        "categoria": {
+            "nombre": "Perfumeria",
+            "id": "perfumeria"
+        },
+        "precio": 72000
+    },
+    {
+        "id": "CuidadoCabello-01",
+        "titulo": "ISDIN Lambdapil Champú Anticaída",
+        "imagen": "./Imagenes/Cuidado Cabello/Cuidado Cabello 1.png",
+        "categoria": {
+            "nombre": "Cuidado del cabello",
+            "id": "cuidadoCabello"
+        },
+        "precio": 33000
+    },
+    {
+        "id": "CuidadoCabello-02",
+        "titulo": "Octodir Plus Shampoo",
+        "imagen": "./Imagenes/Cuidado Cabello/Cuidado Cabello 2.png",
+        "categoria": {
+            "nombre": "Cuidado del cabello",
+            "id": "cuidadoCabello"
+        },
+        "precio": 28000
+    },
+    {
+        "id": "CuidadoCabello-03",
+        "titulo": "Eucerin DermoCapillaire pH5 Shampoo",
+        "imagen": "./Imagenes/Cuidado Cabello/Cuidado Cabello 3.png",
+        "categoria": {
+            "nombre": "Cuidado del cabello",
+            "id": "cuidadoCabello"
+        },
+        "precio": 26000
+    }
+]
