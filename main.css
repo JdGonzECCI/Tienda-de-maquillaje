@@ -514,3 +514,83 @@ main {
 .swal2-container {
     z-index: 10000 !important;
 }
+.boton-accion {
+    background-color: #4b33a8;
+    color: #ffffff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin-top: 1rem;
+}
+.boton-accion:hover {
+    background-color: #785ce9;
+}
+
+/* ========================================================= */
+/* ⭐ FIX: BOTÓN GUARDAR PRODUCTO VISIBLE                    */
+/* ========================================================= */
+
+#guardarProducto, .btn-guardar-producto {
+    background-color: var(--clr-main);
+    color: var(--clr-white);
+    border: 2px solid var(--clr-main);
+    padding: 0.6rem 1.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .2s;
+}
+
+#guardarProducto:hover, .btn-guardar-producto:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-main);
+}
+.contenedor-tabla {
+    padding: 2rem;
+}
+
+.tabla-productos {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.tabla-productos th {
+    background: #4b33a8;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+}
+
+.tabla-productos td {
+    padding: .8rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-productos img {
+    width: 60px;
+    border-radius: .5rem;
+}
+
+.btn-accion {
+    padding: .4rem .8rem;
+    border: none;
+    border-radius: .4rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn-editar {
+    background: #2a7ae4;
+}
+
+.btn-eliminar {
+    background: #d62828;
+    margin-left: .5rem;
+}
