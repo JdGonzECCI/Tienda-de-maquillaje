@@ -111,5 +111,3 @@ function enviarFormulaAlCarrito(codigo) {
     // Se redirige al usuario a la página del carrito
     window.location.href = "Carrito.html";
 }
-
-
