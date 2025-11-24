@@ -1,5 +1,3 @@
-// carrito.js - Versión segura: abre modal SOLO al hacer click en "Comprar ahora"
-
 document.addEventListener("DOMContentLoaded", () => {
 
     let productosEnCarrito = JSON.parse(localStorage.getItem("productos-en-carrito")) || [];
@@ -257,3 +255,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
