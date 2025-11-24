@@ -1,6 +1,3 @@
-// =======================================
-//     SOLO EDITA / ELIMINA PRODUCTOS NUEVOS
-// =======================================
 
 // Productos creados por usuario
 let productosNuevos = JSON.parse(localStorage.getItem("productos-nuevos")) || [];
@@ -107,7 +104,7 @@ function eliminarProducto(e) {
 }
 
 // ======================================================
-//     🔥 Actualiza el localStorage general para index
+//     Actualiza el localStorage general para index
 // ======================================================
 async function actualizarProductosGlobales() {
     const productosJSON = await fetch("./productos.json").then(r => r.json());
