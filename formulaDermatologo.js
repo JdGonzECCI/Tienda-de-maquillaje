@@ -1,39 +1,7 @@
-// ===================================
-// Seguridad: Validación del código de acceso
-// ===================================
-// Esta función se encarga de solicitar y verificar un código de acceso antes de permitir que el usuario entre al módulo de fórmulas
-function validarCodigoAcceso() {
-    const CODIGO_REQUERIDO = "1234567";
-
-    // El sistema solicita al usuario ingresar el código necesario para acceder.
-    let codigoIngresado = prompt("Por favor, introduce el código de acceso para la fórmula del dermatólogo:");
-
-    // Ciclo que mantiene la validación hasta que el usuario ingrese el código correcto
-    while (codigoIngresado !== CODIGO_REQUERIDO) {
-
-        // Si el usuario cancela la entrada, se detiene el proceso y se redirige.
-        if (codigoIngresado === null) {
-            alert("Acceso cancelado. Serás redirigido a la página principal.");
-            window.location.href = "index.html";
-            return false;
-        }
-
-        // Si el código es incorrecto, el sistema lo informa y solicita uno nuevo.
-        alert("Código incorrecto. Intenta de nuevo.");
-        codigoIngresado = prompt("Por favor, introduce el código de acceso para la fórmula del dermatólogo:");
-    }
-
-    // Cuando el código es correcto, el sistema autoriza el acceso.
-    console.log("Acceso concedido.");
-    return true;
-}
-
-
 // =================================
 // Helpers: obtención de productos
 // =================================
-// Esta función obtiene la lista de productos desde el localStorage. Si no hay datos,
-// entonces los carga desde un archivo JSON y los almacena localmente para reutilizarlos.
+// Esta función obtiene la lista de productos desde el localStorage. Si no hay datos, entonces los carga desde un archivo JSON y los almacena localmente para reutilizarlos.
 async function obtenerProductos() {
     let productos = JSON.parse(localStorage.getItem("productos")) || [];
 
@@ -159,7 +127,7 @@ function guardarFormula() {
         "";
 
     // Validación: se exige al menos un producto
-    if (seleccionados.length === 0) {
+   	if (seleccionados.length === 0) {
         alert("Debe seleccionar al menos un producto.");
         return;
     }
@@ -189,13 +157,8 @@ function guardarFormula() {
 // ==================================
 // Inicialización del sistema
 // ==================================
-// Cuando la página termina de cargar, el sistema valida el acceso, carga los productos activa los botones de filtrado y configura el guardado del formulario.
+// Cuando la página termina de cargar, se cargan los productos, se activan los filtros y se configura el guardado.
 document.addEventListener("DOMContentLoaded", () => {
-
-    // Antes de cargar el contenido, él obliga a verificar el código de acceso
-    if (!validarCodigoAcceso()) {
-        return; // Si falla, el sistema detiene toda ejecución
-    }
 
     cargarProductosParaFormula("todos");
     activarBotonesCategoriasFormula();
@@ -209,3 +172,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
